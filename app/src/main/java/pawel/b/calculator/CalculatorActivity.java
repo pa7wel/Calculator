@@ -10,24 +10,49 @@ import android.widget.TextView;
 
 public class CalculatorActivity extends AppCompatActivity {
 
+    public static final String DISPLAY_KEY = "display";
+    public static final String ACCUMULATOR_KEY = "accumulator";
+    public static final String OPERATION_KEY = "operation";
     // zmienna przechowująca stan wyświatlacza
     private String display = "0";
     // zmienna przechowująca pierszą wprowadzona liczbe
     private double accumulator = 0.0;
     // ty enum przechowujący oktualnie wykonywana operację
     private Operation currentOperation = Operation.NONE;
+    private TextView displayTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+        displayTextView = (TextView)findViewById(R.id.displayTextView);
+
+    }
+
+    // save / restore zapisanie stanu activity po zmianie orientacji
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString(DISPLAY_KEY, display);
+        outState.putDouble(ACCUMULATOR_KEY, accumulator);
+        outState.putString(OPERATION_KEY, currentOperation.name());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        display = savedInstanceState.getString(DISPLAY_KEY, "0");
+        accumulator = savedInstanceState.getDouble(ACCUMULATOR_KEY, 0.0);
+        currentOperation = Operation.valueOf(savedInstanceState.getString(OPERATION_KEY));
+        updateDisplay();
     }
 
     public void onClicked(View view){
 
         Button button = (Button) view;
         String key = button.getText().toString();
-        TextView displayTextView = (TextView)findViewById(R.id.displayTextView);
 
         switch (key){
             case "0":
@@ -64,6 +89,10 @@ public class CalculatorActivity extends AppCompatActivity {
                 clearAll();
                 break;
         }
+        updateDisplay();
+    }
+
+    private void updateDisplay() {
         displayTextView.setText(display);
     }
 
