@@ -41,13 +41,13 @@
 
             <Button
                 android:id="@+id/button4"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="CE" />
 
             <Button
                 android:id="@+id/button17"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Operations"
                 android:layout_column="4"
                 android:text="*" />
         </TableRow>
@@ -76,13 +76,13 @@
 
             <Button
                 android:id="@+id/button8"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="C" />
 
             <Button
                 android:id="@+id/button18"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Operations"
                 android:layout_column="4"
                 android:text="/" />
         </TableRow>
@@ -111,13 +111,13 @@
 
             <Button
                 android:id="@+id/button12"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="+" />
 
             <Button
                 android:id="@+id/button19"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Operations"
                 android:layout_column="4"
                 android:text="SQRT(X)" />
         </TableRow>
@@ -146,13 +146,13 @@
 
             <Button
                 android:id="@+id/button16"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="-" />
 
             <Button
                 android:id="@+id/button20"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Operations"
                 android:layout_column="4"
                 android:text="x^2" />
         </TableRow>

@@ -41,7 +41,7 @@
 
             <Button
                 android:id="@+id/button4"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="CE" />
         </TableRow>
@@ -70,7 +70,7 @@
 
             <Button
                 android:id="@+id/button8"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="C" />
         </TableRow>
@@ -99,7 +99,7 @@
 
             <Button
                 android:id="@+id/button12"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="+" />
         </TableRow>
@@ -128,7 +128,7 @@
 
             <Button
                 android:id="@+id/button16"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.Special"
                 android:layout_column="3"
                 android:text="-" />
         </TableRow>
