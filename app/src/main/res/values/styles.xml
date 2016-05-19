@@ -16,6 +16,10 @@
         <item name="android:textColor">#fff</item>
     </style>
     
+    <style name="KeyStyles.KeySizePortrait">
+        <item name="android:layout_height">80dp</item>
+    </style>
+    
     <style name="KeyStyles.Operations">
         <item name="android:background">@drawable/button_selector_operation</item>
     </style>
@@ -23,6 +27,13 @@
     <style name="KeyStyles.Special">
         <item name="android:background">@drawable/button_selector_special</item>
     </style>
+
+    <style name="KeyStyles.SpecialKeySize">
+        <item name="android:background">@drawable/button_selector_special</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+
 
     <style name="DisplayStyle">
         <item name="android:layout_width">match_parent</item>

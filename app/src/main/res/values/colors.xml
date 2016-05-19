@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#29B6F6</color>
+    <color name="colorPrimary">#4DB6AC</color>
     <color name="colorPrimaryDark">#0288D1</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#009688</color>
     <color name="beckground_color">#B3E5FC</color>
     <color name="text_display_color">#01579B</color>
     <color name="selected">#18FFFF</color>

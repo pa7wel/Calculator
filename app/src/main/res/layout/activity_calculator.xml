@@ -23,25 +23,25 @@
 
             <Button
                 android:id="@+id/button"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="0"
                 android:text="1" />
 
             <Button
                 android:id="@+id/button2"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="1"
                 android:text="2" />
 
             <Button
                 android:id="@+id/button3"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="2"
                 android:text="3" />
 
             <Button
                 android:id="@+id/button4"
-                style="@style/KeyStyles.Special"
+                style="@style/KeyStyles.SpecialKeySize"
                 android:layout_column="3"
                 android:text="CE" />
         </TableRow>
@@ -52,25 +52,25 @@
 
             <Button
                 android:id="@+id/button5"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="0"
                 android:text="4" />
 
             <Button
                 android:id="@+id/button6"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="1"
                 android:text="5" />
 
             <Button
                 android:id="@+id/button7"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="2"
                 android:text="6" />
 
             <Button
                 android:id="@+id/button8"
-                style="@style/KeyStyles.Special"
+                style="@style/KeyStyles.SpecialKeySize"
                 android:layout_column="3"
                 android:text="C" />
         </TableRow>
@@ -81,25 +81,25 @@
 
             <Button
                 android:id="@+id/button9"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="0"
                 android:text="7" />
 
             <Button
                 android:id="@+id/button10"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="1"
                 android:text="8" />
 
             <Button
                 android:id="@+id/button11"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="2"
                 android:text="9" />
 
             <Button
                 android:id="@+id/button12"
-                style="@style/KeyStyles.Special"
+                style="@style/KeyStyles.SpecialKeySize"
                 android:layout_column="3"
                 android:text="+" />
         </TableRow>
@@ -110,25 +110,25 @@
 
             <Button
                 android:id="@+id/button13"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="0"
                 android:text="." />
 
             <Button
                 android:id="@+id/button14"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="1"
                 android:text="0" />
 
             <Button
                 android:id="@+id/button15"
-                style="@style/KeyStyles"
+                style="@style/KeyStyles.KeySizePortrait"
                 android:layout_column="2"
                 android:text="=" />
 
             <Button
                 android:id="@+id/button16"
-                style="@style/KeyStyles.Special"
+                style="@style/KeyStyles.SpecialKeySize"
                 android:layout_column="3"
                 android:text="-" />
         </TableRow>
