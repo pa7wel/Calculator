@@ -5,7 +5,7 @@ package pawel.b.calculator;
  */
 public enum Operation {
 
-    NONE(""), ADD("+"), SUB("-");
+    NONE(""), ADD("+"), SUB("-"), MUL("*"), DIV("/");
 
     private final String key;
 

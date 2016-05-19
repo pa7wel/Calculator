@@ -25,7 +25,7 @@ public class CalculatorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
-        displayTextView = (TextView)findViewById(R.id.displayTextView);
+        displayTextView = (TextView) findViewById(R.id.displayTextView);
 
     }
 
@@ -49,12 +49,12 @@ public class CalculatorActivity extends AppCompatActivity {
         updateDisplay();
     }
 
-    public void onClicked(View view){
+    public void onClicked(View view) {
 
         Button button = (Button) view;
         String key = button.getText().toString();
 
-        switch (key){
+        switch (key) {
             case "0":
             case "1":
             case "2":
@@ -65,18 +65,20 @@ public class CalculatorActivity extends AppCompatActivity {
             case "7":
             case "8":
             case "9":
-                if (display.equals("0")){
+                if (display.equals("0")) {
                     display = "";
                 }
                 display += key;
                 break;
             case ".":
-                if(!display.contains(".")) {
+                if (!display.contains(".")) {
                     display += ".";
                 }
                 break;
             case "+":
             case "-":
+            case "*":
+            case "/":
                 calculateOperation(key);
                 break;
             case "=":
@@ -88,8 +90,24 @@ public class CalculatorActivity extends AppCompatActivity {
             case "C":
                 clearAll();
                 break;
+            case "SQRT(X)":
+                calculateSquareRoot();
+                break;
+            case "x^2":
+                calculateSquare();
+                break;
         }
         updateDisplay();
+    }
+
+    private void calculateSquare() {
+        double displayValue = Double.parseDouble(display);
+        displayResult(displayValue * displayValue);
+    }
+
+    private void calculateSquareRoot() {
+        double displayValue = Double.parseDouble(display);
+        displayResult(Math.sqrt(displayValue));
     }
 
     private void updateDisplay() {
@@ -103,9 +121,9 @@ public class CalculatorActivity extends AppCompatActivity {
     }
 
     private void clearOne() {
-        if(display.length() > 1){
+        if (display.length() > 1) {
             display = display.substring(0, display.length() - 1);
-        }else{
+        } else {
             display = "0";
         }
     }
@@ -120,16 +138,24 @@ public class CalculatorActivity extends AppCompatActivity {
             case SUB:
                 displayResult(accumulator - displayValues);
                 break;
+            case MUL:
+                displayResult(accumulator * displayValues);
+                break;
+            case DIV:
+                if (displayValues != 0) {
+                    displayResult(accumulator / displayValues);
+                }
+                break;
         }
-            currentOperation = Operation.NONE;
-            accumulator = 0.0;
+        currentOperation = Operation.NONE;
+        accumulator = 0.0;
 
     }
 
     public void displayResult(double result) {
-        if(result == (long)result){
-            display = String.format("%d", (long)result);
-        }else{
+        if (result == (long) result) {
+            display = String.format("%d", (long) result);
+        } else {
             display = String.format("%s", result);
         }
     }
