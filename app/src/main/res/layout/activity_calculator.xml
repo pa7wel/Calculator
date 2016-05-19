@@ -10,49 +10,50 @@
     tools:context="pawel.b.calculator.CalculatorActivity">
 
     <TextView
+        android:id="@+id/displayTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="0"
         android:layout_above="@+id/tableLayout"
-        android:gravity="end|center_vertical"
         android:layout_alignParentTop="true"
-        android:textSize="45sp"/>
+        android:gravity="end|center_vertical"
+        android:text="0"
+        android:textSize="45sp" />
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="0,1,2,3"
+        android:layout_alignParentBottom="true"
         android:shrinkColumns="0,1,2,3"
-        android:id="@+id/tableLayout"
-        android:layout_alignParentBottom="true">
+        android:stretchColumns="0,1,2,3">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
-                android:text="1"
                 android:id="@+id/button"
+                style="@style/KeyStyles"
                 android:layout_column="0"
-                style="@style/KeyStyles" />
+                android:text="1" />
 
             <Button
-                android:text="2"
                 android:id="@+id/button2"
+                style="@style/KeyStyles"
                 android:layout_column="1"
-                style="@style/KeyStyles" />
+                android:text="2" />
 
             <Button
-                android:text="3"
                 android:id="@+id/button3"
+                style="@style/KeyStyles"
                 android:layout_column="2"
-                style="@style/KeyStyles" />
+                android:text="3" />
 
             <Button
-                android:text="CE"
                 android:id="@+id/button4"
+                style="@style/KeyStyles"
                 android:layout_column="3"
-                style="@style/KeyStyles" />
+                android:text="CE" />
         </TableRow>
 
         <TableRow
@@ -60,28 +61,28 @@
             android:layout_height="match_parent">
 
             <Button
-                android:text="4"
                 android:id="@+id/button5"
+                style="@style/KeyStyles"
                 android:layout_column="0"
-                style="@style/KeyStyles" />
+                android:text="4" />
 
             <Button
-                android:text="5"
                 android:id="@+id/button6"
+                style="@style/KeyStyles"
                 android:layout_column="1"
-                style="@style/KeyStyles" />
+                android:text="5" />
 
             <Button
-                android:text="6"
                 android:id="@+id/button7"
+                style="@style/KeyStyles"
                 android:layout_column="2"
-                style="@style/KeyStyles" />
+                android:text="6" />
 
             <Button
-                android:text="C"
                 android:id="@+id/button8"
+                style="@style/KeyStyles"
                 android:layout_column="3"
-                style="@style/KeyStyles" />
+                android:text="C" />
         </TableRow>
 
         <TableRow
@@ -89,28 +90,28 @@
             android:layout_height="match_parent">
 
             <Button
-                android:text="7"
                 android:id="@+id/button9"
+                style="@style/KeyStyles"
                 android:layout_column="0"
-                style="@style/KeyStyles" />
+                android:text="7" />
 
             <Button
-                android:text="8"
                 android:id="@+id/button10"
+                style="@style/KeyStyles"
                 android:layout_column="1"
-                style="@style/KeyStyles" />
+                android:text="8" />
 
             <Button
-                android:text="9"
                 android:id="@+id/button11"
+                style="@style/KeyStyles"
                 android:layout_column="2"
-                style="@style/KeyStyles" />
+                android:text="9" />
 
             <Button
-                android:text="+"
                 android:id="@+id/button12"
+                style="@style/KeyStyles"
                 android:layout_column="3"
-                style="@style/KeyStyles" />
+                android:text="+" />
         </TableRow>
 
         <TableRow
@@ -118,28 +119,28 @@
             android:layout_height="match_parent">
 
             <Button
-                android:text="."
                 android:id="@+id/button13"
+                style="@style/KeyStyles"
                 android:layout_column="0"
-                style="@style/KeyStyles" />
+                android:text="." />
 
             <Button
-                android:text="0"
                 android:id="@+id/button14"
+                style="@style/KeyStyles"
                 android:layout_column="1"
-                style="@style/KeyStyles" />
+                android:text="0" />
 
             <Button
-                android:text="="
                 android:id="@+id/button15"
+                style="@style/KeyStyles"
                 android:layout_column="2"
-                style="@style/KeyStyles" />
+                android:text="=" />
 
             <Button
-                android:text="-"
                 android:id="@+id/button16"
+                style="@style/KeyStyles"
                 android:layout_column="3"
-                style="@style/KeyStyles" />
+                android:text="-" />
         </TableRow>
     </TableLayout>
 </RelativeLayout>
